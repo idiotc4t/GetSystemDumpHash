@@ -140,11 +140,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CheckPriv.cpp" />
+    <ClCompile Include="CheckVitualMachine.cpp" />
     <ClCompile Include="GetSystemDumpHash.cpp" />
     <ClCompile Include="PrivEsca.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CheckPriv.h" />
+    <ClInclude Include="CheckVitualMachine.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="PrivEsca.h" />
   </ItemGroup>
